@@ -11,6 +11,8 @@
     "strict": false,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
+    "downlevelIteration": true,
+    "lib": ["ESNext"]
   },
   "include": [
     "src/**/*"

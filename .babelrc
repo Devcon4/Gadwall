@@ -1,6 +1,10 @@
 {
     "presets": [
-      "@babel/env",
+      ["@babel/env", {
+        "useBuiltIns": "usage",
+        "corejs": 3, // or 2,
+        "targets": "> 0.25%, not dead"
+      }],
       "@babel/typescript" 
     ],
     "plugins": [
