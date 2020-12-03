@@ -1,10 +1,10 @@
-import checkExpenses from "./day-one";
-import checkPolicy from './day-two';
-import dayOneData from './data/day-one.data'; 
-import dayTwoData from './data/day-two.data'; 
+import checkExpenses from "./day-one/day-one";
+import checkPolicy from './day-two/day-two';
+import dayOneData from './day-one/day-one.data'; 
+import dayTwoData from './day-two/day-two.data'; 
 
 export function app() {
-    console.log(`Run all tests! 🚀`);
+    console.log(`Run all challenges! 🚀`);
 
     const res = {
         'dayOne': { resuts: checkExpenses(dayOneData) },

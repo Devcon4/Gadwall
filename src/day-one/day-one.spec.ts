@@ -1,5 +1,5 @@
 import checkExpenses from './day-one';
-import dayOneData from './data/day-one.data';
+import dayOneData from './day-one.data';
 test('day-one test', () => {
     const data = `1721
     979
