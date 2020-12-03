@@ -3,9 +3,9 @@ const checkPolicy = (data: string) => {
         .trim()
         .split('\n')
         .map(row => {
-            let [policy, password] = row.trim().split(':');
-            let [range, matcher] = policy.split(' ');
-            let [min, max] = range.split('-');
+            const [policy, password] = row.trim().split(':');
+            const [range, matcher] = policy.split(' ');
+            const [min, max] = range.split('-');
 
             const matchCount = (password.match(new RegExp(matcher, 'g')) || []).length;
             return matchCount >= +min && matchCount <= +max;
