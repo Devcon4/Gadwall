@@ -16,7 +16,7 @@ export const checkExpensesThree = (data: string) => {
         for(const i of arr) {
             for(const j of arr) {
                 for(const k of arr) {
-                    if(i+j+k === 2020) {
+                    if(+i+j+k === 2020) {
                         return i*j*k;
                     }
                 }
