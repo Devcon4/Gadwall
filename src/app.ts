@@ -10,6 +10,12 @@ import dayFiveData from './day-five/day-five.data';
 import { parsePassMax, parsePassMissing } from './day-five/day-five';
 import { aggregateAnswers, aggregateAnswersAll } from './day-six/day-six';
 import daySixData from './day-six/day-six.data';
+import {
+  calcBagCount,
+  calcBagsNeeded,
+  calcGoldBagDepth,
+} from './day-seven/day-seven';
+import daySevenData from './day-seven/day-seven.data';
 
 type TableData = {
   [k: string]: { One: string | number; Two?: string | number };
@@ -42,6 +48,10 @@ export function app() {
     daySix: {
       One: aggregateAnswers(daySixData),
       Two: aggregateAnswersAll(daySixData),
+    },
+    daySeven: {
+      One: calcGoldBagDepth(daySevenData),
+      Two: calcBagCount(daySevenData),
     },
   };
 
