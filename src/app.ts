@@ -1,20 +1,16 @@
-import dayOneData from './day-one/day-one.data';
 import { checkExpensesThree, checkExpensesTwo } from './day-one/day-one';
-import dayTwoData from './day-two/day-two.data';
+import dayOneData from './day-one/day-one.data';
 import { checkPolicy, checkPolicyStrict } from './day-two/day-two';
-import dayThreeData from './day-three/day-three.data';
+import dayTwoData from './day-two/day-two.data';
 import { calcColissions, calcColissionsMultiple } from './day-three/day-three';
-import dayFourData from './day-four/day-four.data';
+import dayThreeData from './day-three/day-three.data';
 import { parsePassports, parsePassportsStrict } from './day-four/day-four';
-import dayFiveData from './day-five/day-five.data';
+import dayFourData from './day-four/day-four.data';
 import { parsePassMax, parsePassMissing } from './day-five/day-five';
+import dayFiveData from './day-five/day-five.data';
 import { aggregateAnswers, aggregateAnswersAll } from './day-six/day-six';
 import daySixData from './day-six/day-six.data';
-import {
-  calcBagCount,
-  calcBagsNeeded,
-  calcGoldBagDepth,
-} from './day-seven/day-seven';
+import { calcBagCount, calcGoldBagDepth } from './day-seven/day-seven';
 import daySevenData from './day-seven/day-seven.data';
 
 type TableData = {

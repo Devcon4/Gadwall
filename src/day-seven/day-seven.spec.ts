@@ -1,9 +1,4 @@
-import {
-  calcBagCount,
-  calcBagsNeeded,
-  calcGoldBagDepth,
-  parseBagRule,
-} from './day-seven';
+import { calcBagCount, calcGoldBagDepth, parseBagRule } from './day-seven';
 import daySevenData from './day-seven.data';
 test('day seven part one parser', () => {
   const emptyRule = `dotted black bags contains no other bags.`;
@@ -11,17 +6,14 @@ test('day seven part one parser', () => {
   const multipleRule = `vibrant gray bags contain 3 muted gray bags, 1 dark fuchsia bag, 5 posh white bags, 5 posh tomato bags.`;
 
   const emptyRes = parseBagRule(emptyRule);
-  console.log(emptyRes);
   expect(emptyRes.key).toEqual('dotted black');
   expect(emptyRes.rule[0]).toEqual('no other');
 
   const oneRes = parseBagRule(oneRule);
-  console.log(oneRes);
   expect(oneRes.key).toEqual('bright white');
   expect(oneRes.rule[0]).toEqual('shiny gold');
 
   const multipleRes = parseBagRule(multipleRule);
-  console.log(multipleRes);
   expect(multipleRes.key).toEqual('vibrant gray');
   expect(multipleRes.rule[0]).toEqual('muted gray');
   expect(multipleRes.rule[1]).toEqual('dark fuchsia');
