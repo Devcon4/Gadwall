@@ -12,7 +12,7 @@ import { aggregateAnswers, aggregateAnswersAll } from './day-six/day-six';
 import daySixData from './day-six/day-six.data';
 import { calcBagCount, calcGoldBagDepth } from './day-seven/day-seven';
 import daySevenData from './day-seven/day-seven.data';
-import { runCode } from './day-eight/day-eight';
+import { runCode, safeRunCode } from './day-eight/day-eight';
 import dayEightData from './day-eight/day-eight.data';
 
 type TableData = {
@@ -53,6 +53,7 @@ export function app() {
     },
     dayEight: {
       One: runCode(dayEightData),
+      Two: safeRunCode(dayEightData)
     },
   };
 

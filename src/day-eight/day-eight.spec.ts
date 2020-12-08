@@ -25,5 +25,5 @@ acc +1
 jmp -4
 acc +6`;
 
-  expect(safeRunCode(data)).toEqual(5);
+  expect(safeRunCode(data)).toEqual(8);
 });
