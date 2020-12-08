@@ -12,6 +12,8 @@ import { aggregateAnswers, aggregateAnswersAll } from './day-six/day-six';
 import daySixData from './day-six/day-six.data';
 import { calcBagCount, calcGoldBagDepth } from './day-seven/day-seven';
 import daySevenData from './day-seven/day-seven.data';
+import { runCode } from './day-eight/day-eight';
+import dayEightData from './day-eight/day-eight.data';
 
 type TableData = {
   [k: string]: { One: string | number; Two?: string | number };
@@ -48,6 +50,9 @@ export function app() {
     daySeven: {
       One: calcGoldBagDepth(daySevenData),
       Two: calcBagCount(daySevenData),
+    },
+    dayEight: {
+      One: runCode(dayEightData),
     },
   };
 
