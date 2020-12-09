@@ -14,6 +14,8 @@ import { calcBagCount, calcGoldBagDepth } from './day-seven/day-seven';
 import daySevenData from './day-seven/day-seven.data';
 import { runCode, safeRunCode } from './day-eight/day-eight';
 import dayEightData from './day-eight/day-eight.data';
+import { validateXmas, validateXmasSet } from './day-nine/day-nine';
+import dayNineData from './day-nine/day-nine.data';
 
 type TableData = {
   [k: string]: { One: string | number; Two?: string | number };
@@ -53,7 +55,11 @@ export function app() {
     },
     dayEight: {
       One: runCode(dayEightData),
-      Two: safeRunCode(dayEightData)
+      Two: safeRunCode(dayEightData),
+    },
+    dayNine: {
+      One: validateXmas(25, dayNineData),
+      Two: validateXmasSet(25, dayNineData),
     },
   };
 
