@@ -16,6 +16,8 @@ import { runCode, safeRunCode } from './day-eight/day-eight';
 import dayEightData from './day-eight/day-eight.data';
 import { validateXmas, validateXmasSet } from './day-nine/day-nine';
 import dayNineData from './day-nine/day-nine.data';
+import { chainAdapters } from './day-ten/day-ten';
+import dayTenData from './day-ten/day-ten.data';
 
 type TableData = {
   [k: string]: { One: string | number; Two?: string | number };
@@ -61,6 +63,9 @@ export function app() {
       One: validateXmas(25, dayNineData),
       Two: validateXmasSet(25, dayNineData),
     },
+    dayTen: {
+      One: chainAdapters(dayTenData)
+    }
   };
 
   console.table(res);
