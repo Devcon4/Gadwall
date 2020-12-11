@@ -81,6 +81,6 @@ test('day ten part two', () => {
 10
 3`;
 
-// expect(adapterPermutations(dataSmall)).toEqual(19208);
+expect(adapterPermutations(dataSmall)).toEqual(8);
 expect(adapterPermutations(data)).toEqual(19208);
 });

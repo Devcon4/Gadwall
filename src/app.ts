@@ -16,7 +16,7 @@ import { runCode, safeRunCode } from './day-eight/day-eight';
 import dayEightData from './day-eight/day-eight.data';
 import { validateXmas, validateXmasSet } from './day-nine/day-nine';
 import dayNineData from './day-nine/day-nine.data';
-import { chainAdapters } from './day-ten/day-ten';
+import { adapterPermutations, chainAdapters } from './day-ten/day-ten';
 import dayTenData from './day-ten/day-ten.data';
 
 type TableData = {
@@ -64,7 +64,8 @@ export function app() {
       Two: validateXmasSet(25, dayNineData),
     },
     dayTen: {
-      One: chainAdapters(dayTenData)
+      One: chainAdapters(dayTenData),
+      Two: adapterPermutations(dayTenData)
     }
   };
 
