@@ -29,6 +29,7 @@
     "@rollup/plugin-commonjs": "^15.0.0",
     "@rollup/plugin-node-resolve": "^9.0.0",
     "@types/jest": "^26.0.12",
+    "core-js": "^3.8.1",
     "jest": "^26.4.2",
     "rollup": "^2.26.9",
     "ts-jest": "^26.3.0",
